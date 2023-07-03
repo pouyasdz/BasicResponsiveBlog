@@ -91,21 +91,7 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 600px) {
-    .social-media{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .container{
-        grid-template-columns: 1fr !important;
-    }
-    .card{
-        width: calc(100% - 20px);
-    }
-}
+
 
 @media only screen and (max-width: 1400px){
     .container{
@@ -118,6 +104,23 @@ body{
 @media only screen and (max-width: 800px) {
     .container{
         grid-template-columns: 1fr 1fr !important;
+    }
+    .card{
+        width: calc(100% - 20px);
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .social-media{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .container{
+        grid-template-columns: 1fr !important;
     }
     .card{
         width: calc(100% - 20px);
